@@ -1,0 +1,383 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Logo */
+
+.logo img {
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Header */
+.header {
+    background: #0a2642 !important; 
+    padding: 15px 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+     color: #00aaff;
+}
+
+/* hero */
+.hero {
+    height: 90vh;
+
+    background: linear-gradient(to right, rgba(10,38,66,0.85), rgba(10,38,66,0.85)),
+    url('../assets/img/img-chiller.png');
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 10px auto 0;
+    line-height: 1.5;
+}
+
+/*Botão orçamento*/
+.btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.3);
+
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #008ecc;
+}
+
+/* Serviços */
+.servicos {
+    padding: 50px 20px;
+    text-align: center;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servicos h2{
+    font-size: 2rem;
+    color: #0a2642;
+}
+
+.pagina-topo {
+    padding: 80px 20px;
+    background: #0a2642;
+    color: white;
+    text-align: center;
+
+     background: linear-gradient(
+        rgba(10,38,66,0.85),
+        rgba(10,38,66,0.85)
+    ),
+    url('../assets/img/img-chiller.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.pagina-topo h1 {
+    font-size: 2.5rem;
+}
+
+.pagina-topo p {
+    opacity: 0.9;
+}
+
+/* caixas */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Sobre */
+.sobre {
+    margin-top: 30px;
+    padding: 50px 20px;
+    background: #eee;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+/* Contato */
+.contato {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+
+    max-width: 1100px;
+    margin: 20px auto;
+
+    border-radius: 10px;
+}
+
+.contato p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contato-box {
+    margin: 40px auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+
+    max-width: 400px;
+    text-align: left;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.contato-box input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato-box input:focus,
+.contato-box textarea:focus {
+    outline: none;
+    border: 1px solid #00aaff;
+}
+
+.contato-box:hover {
+    transform: translateY(-5px);
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contato-cta {
+    max-width: 300px;
+    text-align: center;
+}
+
+.contato-cta h3 {
+    margin-bottom: 10px;
+    color: #0a2642;
+}
+
+.contato-cta p {
+    margin-bottom: 20px;
+}
+
+form.contato-box {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+}
+
+.contato-box button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+
+    background: #0a2642;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contato-box button:hover {
+    background: #163a5f;
+}
+
+/* Botão whatsapp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background: #25D366;
+    color: white;
+
+    font-size: 24px;
+    text-decoration: none;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+
+    z-index: 999;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+#footer-container {
+    background: #0a2642;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+ /*botao hamburger*/
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /*botao hamburger*/
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+
+        background: #0a2642;
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}

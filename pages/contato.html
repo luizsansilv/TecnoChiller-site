@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contato</title>
+</head>
+<body>
+
+        <div id="menu-container"></div>
+    
+    <main>
+        <section class="pagina-topo">
+            <h1>Contato</h1>
+            <p>Entre em contato e solicite seu orçamento</p>
+        </section>
+
+        <section class="contato">
+
+            <div class="contato-container">
+
+                <div class="contato-box">
+                    
+                    <p>📞 (11) 4443-7350</p>
+                    <p>📧 contato@tecnochiller.com.br</p>
+                    <p>📍 Franco da Rocha - SP</p>
+                    <p>🕒 Seg à Sex: 08h às 18h</p>
+
+                </div>
+
+                <form class="contato-box"
+                      action="https://formspree.io/f/xjglkgjk"
+                      method="post"
+                >
+                    
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+
+                    <input type="email" name="email" placeholder="Seu email" required>
+
+                    <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+
+                    <input type="hidden" name="_subject" value = "Novo contato pelo site">
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+
+                <p class="form-sucesso" style="display:none;"> 
+                     ✅ Mensagem enviada com sucesso!
+                </p>
+
+                <div class="contato-cta">
+                    
+                    <h3>Precisa de um orçamento?</h3>
+                    <p>Fale com nossa equipe agora mesmo.</p>
+                    
+                    
+                    <a href="https://wa.me/5511999999999" class="btn">
+                    Falar no WhatsApp
+                    </a>
+                </div>
+
+
+            </div>
+
+    </section>
+
+    </main>
+    
+
+    <div id="footer-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
