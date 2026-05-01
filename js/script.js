@@ -24,10 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
     const msg = document.querySelector(".form-sucesso");
 
-    form.addEventListener("submit", function() {
-        msg.style.display = "block";
-    })
+    if (form && msg) {
+        form.addEventListener("submit", function() {
+            msg.style.display = "block";
+    });
 
+    }
 });
 
 
