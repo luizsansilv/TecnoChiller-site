@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
    
     const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
 
-    fetch(basePath + "components/menu.html")
+    fetch(basePath + "./components/menu.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("menu-container").innerHTML = data;
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    fetch(basePath + "components/footer.html")
+    fetch(basePath + "./components/footer.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("footer-container").innerHTML = data;
