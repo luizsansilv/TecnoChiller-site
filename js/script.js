@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
    
-    const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
 
-    fetch(basePath + "./ m components/menu.html")
+    fetch("/components/menu.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("menu-container").innerHTML = data;
@@ -10,12 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const toggle = document.querySelector(".menu-toggle");
         const navLinks = document.querySelector(".nav-links");
 
-        toggle.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
+        if (toggle && navLinks) {
+            
+            toggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+
+        }
+
     });
 
-    fetch(basePath + "./components/footer.html")
+    fetch("/components/footer.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("footer-container").innerHTML = data;
