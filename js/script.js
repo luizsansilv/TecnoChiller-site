@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
    
     const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
 
-    fetch(basePath + "./components/menu.html")
+    fetch(basePath + "./ m components/menu.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("menu-container").innerHTML = data;
