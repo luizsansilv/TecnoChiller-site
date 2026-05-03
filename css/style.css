@@ -18,6 +18,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+section {
+    margin-bottom: 40px;
+}
+
 /* Logo */
 
 .logo img {
@@ -46,6 +50,8 @@ h2 {
     list-style: none;
     display: flex;
     gap: 20px;
+
+    z-index: 999;
 }
 
 .nav-links a {
@@ -329,12 +335,10 @@ h2 {
 }
 
 .contato-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 
-    gap: 40px;
-    flex-wrap: wrap;
 }
 
 .contato-cta {
@@ -373,6 +377,12 @@ form.contato-box {
 
 .contato-box button:hover {
     background: #163a5f;
+}
+
+@media (max-width: 900px) {
+    .contato-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Botão whatsapp */
@@ -428,8 +438,18 @@ form.contato-box {
         align-items: center;
     }
 
+     .hero {
+        height: auto;
+        padding: 100px 20px 60px;
+    }
+
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
     }
 
     .hero-buttons {
@@ -465,4 +485,20 @@ form.contato-box {
     .sobre-container{
         grid-template-columns: 1fr;
     }
+
+    .sobre {
+        padding: 40px 15px;
+    }
+
+    .historia {
+        font-size: 14px;
+    }
+
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    
 }
+
