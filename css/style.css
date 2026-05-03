@@ -117,10 +117,43 @@ h2 {
     margin: 0 auto;
 }
 
-.servicos h2{
-    font-size: 2rem;
+.servicos h3{
+    font-size: 1.5rem;
     color: #0a2642;
 }
+
+/*cards servicos*/
+.servicos-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card-servico {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: left;
+
+    border-left: 4px solid #0c4866;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card-servico i {
+    font-size: 20px;
+    
+}
+
+
+
 
 .pagina-topo {
     padding: 80px 20px;
@@ -160,8 +193,9 @@ h2 {
     background: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 
+    margin: 10px;
     padding: 20px;
-    width: 250px;
+    width: 100%;
     border-radius: 10px;
 
     transition: 0.3s;
@@ -181,14 +215,60 @@ h2 {
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
+.card ul {
+    padding-left: 20px;
+    color: #555;
+    list-style: none;
+}
+
+.card li{
+    margin-bottom: 5px;
+}
+
 /* Sobre */
 .sobre {
-    margin-top: 30px;
-    padding: 50px 20px;
-    background: #eee;
-    text-align: center;
+    padding: 60px 20px;
+    background: #f5f5f5;
 
+    max-width: 1200px;
+    margin: 40px auto;
     border-radius: 10px;
+}
+
+.sobre-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+    align-items: start;
+}
+
+
+
+.historia {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Lado direito */
+.lado-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lado-direito .card {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lado-direito h3 {
+    color: #0a2642;
 }
 
 /* Contato */
@@ -379,5 +459,9 @@ form.contato-box {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .sobre-container{
+        grid-template-columns: 1fr;
     }
 }
