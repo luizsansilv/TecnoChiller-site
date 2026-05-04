@@ -357,13 +357,13 @@ h2 {
 }
 
 .contato-cta {
-    
+    margin: 50px auto;
     max-width: 300px;
     text-align: center;
 }
 
 .contato-cta h3 {
-    margin: 50px auto;
+  
     color: #0a2642;
 }
 
