@@ -185,11 +185,14 @@ h2 {
 }
 
 .pagina-topo h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .pagina-topo p {
-    margin-top: 20px;
+    max-width: 500px;
+    margin: 10px auto 0;
+    line-height: 1.5;
+
     opacity: 0.9;
 }
 
