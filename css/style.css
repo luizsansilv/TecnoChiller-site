@@ -242,6 +242,10 @@ section {
     border-radius: 10px;
 }
 
+.sobre h2 {
+    text-align: center;
+}
+
 .sobre-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
