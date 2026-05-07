@@ -133,6 +133,19 @@ h2 {
     color: #0a2642;
 }
 
+
+
+.img-servico {
+    width: 600px;
+    margin:40px 0 ;
+
+    border-radius: 7px;
+}
+
+.servicos p {
+    text-align: left;
+}
+
 /*cards servicos*/
 .servicos-cards {
     display: grid;

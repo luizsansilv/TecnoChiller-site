@@ -1,13 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const basePath = window.location.hostname.includes("github.io")
+    const isGitHubPages = window.location.hostname.includes("github.io");
+    const isInPageFolder = window.location.pathname.includes("/pages/");
+
+    const basePath = isGitHubPages
         ? "/TecnoChiller-site/"
-        : "/";
+        : isInPageFolder ? "../" : "./";
+       
 
     fetch(basePath + "components/menu.html")
         .then(res => res.text())
         .then(data => {
             document.getElementById("menu-container").innerHTML = data;
+
+        // Corrige os caminhos dinamicamente após injetar
+        document.querySelectorAll("#menu-container a").forEach(link => {
+            const href = link.getAttribute("href");
+            if (href && !href.startsWith("http")) {
+                link.setAttribute("href", basePath + href);
+            }
+        });
+
+        document.querySelector("#menu-container img")?.setAttribute(
+            "src", basePath + "assets/img/logo-tecno.png"
+        );
 
             const toggle = document.querySelector(".menu-toggle");
             const navLinks = document.querySelector(".nav-links");
