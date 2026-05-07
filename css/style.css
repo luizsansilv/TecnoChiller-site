@@ -135,12 +135,16 @@ h2 {
 
 
 
-.img-servico {
+.card-img img {
     width: 600px;
     margin:40px 0 ;
+    
 
+    overflow: hidden;
     border-radius: 7px;
 }
+
+
 
 .card-img p{
     text-align: left;
@@ -163,17 +167,23 @@ h2 {
     transition: 0.3s;
     text-align: left;
 
+    transition: all .4s ease;
     border-left: 4px solid #0c4866;
 }
 
 .card-servico:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
 
 .card-servico i {
     font-size: 20px;
     
+}
+
+.card-servico p{
+    line-height: 1.7;
+    max-width: 90%;
 }
 
 .card-servico h3 {
@@ -466,6 +476,13 @@ form.contato-box {
         flex-direction: column;
         align-items: center;
     }
+
+
+    .card-img img {
+        height: auto;
+        object-fit: contain;
+    }
+
 
      .hero {
         height: auto;
