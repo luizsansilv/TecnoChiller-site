@@ -479,8 +479,7 @@ form.contato-box {
 
 
     .card-img img {
-        height: auto;
-        width: auto;
+        width: 300px;
         object-fit: contain;
     }
 
