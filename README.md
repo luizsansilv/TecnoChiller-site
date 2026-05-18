@@ -12,7 +12,10 @@
 
 ## 📋 Sobre o Projeto
 
-A **TecnoChiller** é uma empresa de Franco da Rocha — SP, especializada em soluções de refrigeração industrial. Este repositório contém o site institucional da empresa, criado para apresentar seus serviços, facilitar o contato com clientes e gerar novos orçamentos via WhatsApp.
+
+Este projeto consiste em uma proposta de redesign institucional para uma empresa do segmento de refrigeração industrial.
+
+O objetivo foi desenvolver uma interface moderna, responsiva e visualmente organizada, focando em experiência do usuário (UX), apresentação dos serviços e fortalecimento da presença digital da marca.
 
 ### Serviços apresentados no site
 
@@ -100,4 +103,4 @@ Desenvolvido por **[@luizsansilv](https://github.com/luizsansilv)**.
 
 ## 📄 Licença
 
-Este projeto é de uso privado e pertence à empresa TecnoChiller. Todos os direitos reservados.
+Este projeto foi desenvolvido para fins de estudo, prática e portfólio pessoal.
