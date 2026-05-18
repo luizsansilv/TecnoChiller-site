@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const isInPageFolder = window.location.pathname.includes("/pages/");
 
     const basePath = isGitHubPages
-        ? "/TecnoChiller-site/"
+        ? "/TecnoChiller-Website-Redesign/"
         : isInPageFolder ? "../" : "./";
        
 
