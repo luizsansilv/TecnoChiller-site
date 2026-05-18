@@ -6,7 +6,7 @@
 [![CSS](https://img.shields.io/badge/CSS-42.3%25-1572B6?style=flat&logo=css3&logoColor=white)](https://github.com/luizsansilv/TecnoChiller-site)
 [![JavaScript](https://img.shields.io/badge/JavaScript-7.1%25-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://github.com/luizsansilv/TecnoChiller-site)
 
-🔗 **[Acesse o site ao vivo →]( https://luizsansilv.github.io/TecnoChiller-site/)**
+🔗 **[Acesse o site ao vivo →]( https://luizsansilv.github.io/TecnoChiller-Website-Redesign/)**
 
 ---
 
@@ -81,7 +81,7 @@ O site está hospedado na **GitHub** com deploy automático a partir da branch `
 
 Qualquer push para a branch principal atualiza o site em produção automaticamente.
 
-**URL de produção:** [ https://luizsansilv.github.io/TecnoChiller-site/]( https://luizsansilv.github.io/TecnoChiller-site/)
+**URL de produção:** [ https://luizsansilv.github.io/TecnoChiller-Website-Redesign/]( https://luizsansilv.github.io/TecnoChiller-Website-Redesign/)
 
 ---
 
