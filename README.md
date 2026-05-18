@@ -62,7 +62,7 @@ Não há dependências ou build necessário — basta clonar e abrir no navegado
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/luizsansilv/TecnoChiller-site.git
+git https://github.com/luizsansilv/TecnoChiller-Website-Redesign
 
 # 2. Acesse a pasta
 cd TecnoChiller-site
